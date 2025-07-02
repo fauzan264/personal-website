@@ -18,9 +18,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fauzan - Portfolio",
   description: "Web Portfolio Ahmad Fauzan",
-  icons: {
-    icon: "/favicon.ico",
-  },
   openGraph: {
     title: "Fauzan - Portfolio",
     description: "Web Portfolio Ahmad Fauzan",
