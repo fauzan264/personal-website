@@ -34,8 +34,11 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { SiChakraui } from "react-icons/si";
 import Link from "next/link";
+import { useColorModeValue } from "@/components/ui/color-mode";
 
 export default function Home() {
+  const backgroundColor = useColorModeValue("white", "gray.800");
+  const color = useColorModeValue("gray.800", "gray.200");
   return (
     <>
       <Stack
@@ -60,10 +63,9 @@ export default function Home() {
             <Stack direction={{ base: "column", md: "row" }}>
               <Link href="#contact">
                 <Button
-                  // as={"a"}
                   rounded={"lg"}
                   bg={"red.400"}
-                  color={"white"}
+                  color={color}
                   padding={2}
                   _hover={{
                     bg: "red.500",
@@ -78,8 +80,6 @@ export default function Home() {
         <Flex flex={1}>
           <Image
             alt={"My photo"}
-            objectFit={"cover"}
-            // layout="fill"
             width={800}
             height={250}
             src={"/images/me2.png"}
@@ -106,7 +106,12 @@ export default function Home() {
               zIndex={1}
             />
           </Box>
-          <SectionWrapper id="about-me" title="About Me" bgColor="white">
+          <SectionWrapper
+            id="about-me"
+            title="About Me"
+            bgColor={backgroundColor}
+            color={color}
+          >
             <Text mt={5} fontSize={"xl"}>
               I am a passionate Web Developer with a strong desire to
               continuously learn and enhance my skills in Software Engineering.
@@ -119,7 +124,12 @@ export default function Home() {
           </SectionWrapper>
         </Flex>
       </Box>
-      <SectionWrapper id="skill" title="Skills" bgColor="gray.100">
+      <SectionWrapper
+        id="skill"
+        title="Skills"
+        color={color}
+        bgColor={useColorModeValue("gray.100", "gray.900")}
+      >
         <Grid
           templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(6, 1fr)" }}
           mt={5}
@@ -152,12 +162,17 @@ export default function Home() {
                 bgColor: "gray.700",
               }}
             >
-              <Icon size={"2rem"} color="white" />
+              <Icon size={"2rem"} color={"white"} />
             </GridItem>
           ))}
         </Grid>
       </SectionWrapper>
-      <Box pt={20} px={20} py={20} bgColor={"gray.100"}>
+      <Box
+        px={5}
+        pt={20}
+        py={20}
+        bgColor={useColorModeValue("gray.100", "gray.900")}
+      >
         <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={10}>
           <Box>
             <Heading mb={10}>Working Experiences</Heading>
@@ -192,7 +207,12 @@ export default function Home() {
           </Box>
         </Grid>
       </Box>
-      <SectionWrapper id="portfolio" title="Portfolios" bgColor="white">
+      <SectionWrapper
+        id="portfolio"
+        title="Portfolios"
+        bgColor={"bg-base"}
+        color={color}
+      >
         <Grid
           templateColumns={{
             base: "repeat(1fr)",
@@ -214,9 +234,10 @@ export default function Home() {
         </Grid>
       </SectionWrapper>
       <SectionWrapper
-        id="testimonial"
-        title="What My Teammates Say"
-        bgColor="white"
+        id={"testimonial"}
+        title={"What My Teammates Say"}
+        bgColor={backgroundColor}
+        color={color}
       >
         <Grid
           templateColumns={{
