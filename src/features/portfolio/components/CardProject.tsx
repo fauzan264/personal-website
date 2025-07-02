@@ -1,0 +1,54 @@
+import { Button, Card, Image, Link, Flex } from "@chakra-ui/react";
+import ICardProject from "../types";
+import { GrLinkNext } from "react-icons/gr";
+import { Badge } from "@chakra-ui/react";
+
+export default function CardProject({
+  image,
+  title,
+  description,
+  technologies,
+  link,
+}: ICardProject) {
+  return (
+    <Card.Root
+      maxW="sm"
+      overflow="hidden"
+      mt={5}
+      shadow={"md"}
+      transition={"ease-in-out"}
+      transitionDuration={"slow"}
+      _hover={{ bgColor: "gray.100", shadow: "lg" }}
+    >
+      <Image src={image} alt="" height={250} />
+      <Card.Body p={5}>
+        <Flex my={3}>
+          {technologies.map((technology, i) => {
+            return (
+              <Badge key={i} px={1} mr={1} size={"sm"} colorPalette={"red"}>
+                {technology}
+              </Badge>
+            );
+          })}
+        </Flex>
+        <Card.Title mt={2}>{title}</Card.Title>
+        <Card.Description my={5}>{description}</Card.Description>
+      </Card.Body>
+      <Card.Footer p={5} justifyContent={"end"}>
+        <Button
+          asChild
+          bgColor={"red.500"}
+          color={"white"}
+          textStyle={"sm"}
+          variant={"solid"}
+          padding="2"
+        >
+          <Link href={link} target={"_blank"}>
+            Link
+            <GrLinkNext />
+          </Link>
+        </Button>
+      </Card.Footer>
+    </Card.Root>
+  );
+}
