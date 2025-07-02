@@ -16,16 +16,18 @@ export default function JobItem({
       {image && <Image src={image} width={70} height={20} alt={"job image"} />}
 
       {!image && (
-        <Icon width={70} height={20}>
+        <Icon width={70} height={20} color={"gray.800"}>
           <FaBuilding />
         </Icon>
       )}
       <Box>
-        <Heading fontSize={"md"}>
+        <Heading fontSize={"md"} color={"gray.800"}>
           {company} {`(${status})`}
         </Heading>
-        <Heading fontSize={"sm"}>{position}</Heading>
-        <Text fontSize={"sm"}>
+        <Heading fontSize={"sm"} color={"gray.600"}>
+          {position}
+        </Heading>
+        <Text fontSize={"sm"} color={"gray.600"}>
           {from} - {until}
         </Text>
       </Box>

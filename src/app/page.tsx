@@ -37,8 +37,6 @@ import Link from "next/link";
 import { useColorModeValue } from "@/components/ui/color-mode";
 
 export default function Home() {
-  const backgroundColor = useColorModeValue("white", "gray.800");
-  const color = useColorModeValue("gray.800", "gray.200");
   return (
     <>
       <Stack
@@ -65,7 +63,8 @@ export default function Home() {
                 <Button
                   rounded={"lg"}
                   bg={"red.400"}
-                  color={color}
+                  color={"gray.200"}
+                  fontWeight={"bold"}
                   padding={2}
                   _hover={{
                     bg: "red.500",
@@ -109,10 +108,10 @@ export default function Home() {
           <SectionWrapper
             id="about-me"
             title="About Me"
-            bgColor={backgroundColor}
-            color={color}
+            bgColor={"white"}
+            color={"gray.800"}
           >
-            <Text mt={5} fontSize={"xl"}>
+            <Text mt={5} fontSize={"xl"} color={"gray.600"}>
               I am a passionate Web Developer with a strong desire to
               continuously learn and enhance my skills in Software Engineering.
               Always eager to improve and adapt to new technologies, I strive to
@@ -127,7 +126,7 @@ export default function Home() {
       <SectionWrapper
         id="skill"
         title="Skills"
-        color={color}
+        color={"gray.800"}
         bgColor={useColorModeValue("gray.100", "gray.900")}
       >
         <Grid
@@ -175,7 +174,9 @@ export default function Home() {
       >
         <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={10}>
           <Box>
-            <Heading mb={10}>Working Experiences</Heading>
+            <Heading mb={10} color={"gray.800"}>
+              Working Experiences
+            </Heading>
 
             {jobs.map((job, i) => {
               return (
@@ -192,7 +193,9 @@ export default function Home() {
             })}
           </Box>
           <Box>
-            <Heading mb={10}>Certificates & Achievement</Heading>
+            <Heading mb={10} color={"gray.800"}>
+              Certificates & Achievement
+            </Heading>
 
             {certificates.map((certificate, i) => {
               return (
@@ -210,8 +213,8 @@ export default function Home() {
       <SectionWrapper
         id="portfolio"
         title="Portfolios"
-        bgColor={"bg-base"}
-        color={color}
+        bgColor={"white"}
+        color={"gray.800"}
       >
         <Grid
           templateColumns={{
@@ -236,8 +239,8 @@ export default function Home() {
       <SectionWrapper
         id={"testimonial"}
         title={"What My Teammates Say"}
-        bgColor={backgroundColor}
-        color={color}
+        bgColor={"white"}
+        color={"gray.800"}
       >
         <Grid
           templateColumns={{
