@@ -1,5 +1,5 @@
 import { Flex, Heading, Icon, Text, Box } from "@chakra-ui/react";
-import { IJobList } from "../types";
+import { IJobItem } from "../types";
 import { FaBuilding } from "react-icons/fa";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ export default function JobItem({
   position,
   from,
   until,
-}: IJobList) {
+}: IJobItem) {
   return (
     <Flex gap={3} mb={5}>
       {image && <Image src={image} width={70} height={20} alt={"job image"} />}
