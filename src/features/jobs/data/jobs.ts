@@ -1,0 +1,42 @@
+export const jobs = [
+  {
+    company: "ByteDance",
+    position: "Tech Support Engineer",
+    status: "Full Time",
+    from: "08 May 2024",
+    until: "31 December 2024",
+    image: "/images/jobs/bytedance.png",
+  },
+  {
+    company: "GoTo Logistics",
+    position: "Tech Support Engineer",
+    status: "Full Time",
+    from: "21 March 2022",
+    until: "31 December 2024",
+    image: "/images/jobs/gtl.jpeg",
+  },
+  {
+    company: "PT. Artavac Melayani Indonesia",
+    position: "Software Engineer",
+    status: "Full Time",
+    from: "21 August 2020",
+    until: "18 October 2021",
+    image: "",
+  },
+  {
+    company: "Teknologi Pundi Kreatif",
+    position: "Web Developer",
+    status: "Full Time",
+    from: "14 September 2019",
+    until: "14 February 2020",
+    image: "/images/jobs/tpk.png",
+  },
+  {
+    company: "Telkom Akses",
+    position: "Admin Commerce",
+    status: "Internship",
+    from: "14 September 2019",
+    until: "14 February 2020",
+    image: "",
+  },
+];
