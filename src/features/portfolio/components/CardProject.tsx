@@ -1,7 +1,8 @@
-import { Button, Card, Image, Link, Flex } from "@chakra-ui/react";
+import { Button, Card, Link, Flex, Box } from "@chakra-ui/react";
 import ICardProject from "../types";
 import { GrLinkNext } from "react-icons/gr";
 import { Badge } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function CardProject({
   image,
@@ -20,7 +21,14 @@ export default function CardProject({
       transitionDuration={"slow"}
       _hover={{ bgColor: "gray.100", shadow: "lg" }}
     >
-      <Image src={image} alt="" height={250} />
+      <Box w={"full"} height={250} display={"block"} position={"relative"}>
+        <Image
+          src={image}
+          alt="portfolio-image"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
       <Card.Body p={5}>
         <Flex my={3}>
           {technologies.map((technology, i) => {
