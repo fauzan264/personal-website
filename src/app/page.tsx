@@ -8,6 +8,10 @@ import {
   Heading,
   Stack,
   Button,
+  Field,
+  Input,
+  Fieldset,
+  Textarea,
 } from "@chakra-ui/react";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import CardProject from "@/features/portfolio/components/CardProject";
@@ -15,6 +19,7 @@ import JobItem from "@/features/jobs/components/JobItem";
 import CertificateItem from "@/features/certificates/components/CertificateItem";
 import TestimonialCard from "@/features/testimonial/components/TestimonialCard";
 import Image from "next/image";
+import { RiMailLine } from "react-icons/ri";
 
 import { jobs } from "@/features/jobs/data/jobs";
 import { certificates } from "@/features/certificates/data/certificates";
@@ -263,6 +268,53 @@ export default function Home() {
             );
           })}
         </Grid>
+      </SectionWrapper>
+
+      <SectionWrapper
+        id="contact"
+        title="contact"
+        bgColor={"white"}
+        color={"gray.800"}
+      >
+        <Box justifyItems={"center"}>
+          <Fieldset.Root
+            size="md"
+            invalid
+            justifyContent={"center"}
+            maxW={"md"}
+            bgColor={"gray.50"}
+            py={20}
+            px={5}
+          >
+            <Fieldset.Content>
+              <Field.Root>
+                <Field.Label>Your Name</Field.Label>
+                <Input type={"text"} name="name" />
+              </Field.Root>
+            </Fieldset.Content>
+            <Fieldset.Content>
+              <Field.Root>
+                <Field.Label>Phone Number</Field.Label>
+                <Input type={"text"} name="phone_number" />
+              </Field.Root>
+            </Fieldset.Content>
+            <Fieldset.Content>
+              <Field.Root>
+                <Field.Label>Email</Field.Label>
+                <Input type={"email"} name="email" />
+              </Field.Root>
+            </Fieldset.Content>
+            <Fieldset.Content>
+              <Field.Root>
+                <Field.Label>Message</Field.Label>
+                <Textarea name="message" />
+              </Field.Root>
+            </Fieldset.Content>
+            <Button colorPalette="orange" variant="solid" my={5}>
+              <RiMailLine /> Email
+            </Button>
+          </Fieldset.Root>
+        </Box>
       </SectionWrapper>
     </>
   );
