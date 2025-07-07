@@ -311,7 +311,7 @@ export default function Home() {
               </Field.Root>
             </Fieldset.Content>
             <Button colorPalette="orange" variant="solid" my={5}>
-              <RiMailLine /> Email
+              <RiMailLine /> Submit
             </Button>
           </Fieldset.Root>
         </Box>
