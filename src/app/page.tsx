@@ -10,6 +10,7 @@ import {
   Wrap,
   WrapItem,
   Tag,
+  ClientOnly,
 } from "@chakra-ui/react";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import CardProject from "@/features/portfolio/components/CardProject";
@@ -53,7 +54,7 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <ClientOnly>
       <Box
         id="hero"
         pt={20}
@@ -302,6 +303,6 @@ export default function Home() {
           </Fieldset.Root>
         </Box>
       </SectionWrapper> */}
-    </>
+    </ClientOnly>
   );
 }
