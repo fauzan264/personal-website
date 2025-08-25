@@ -1,5 +1,10 @@
 export const certificates = [
   {
+    title: "Bootcamp: Full Stack Web Development",
+    publisher: "Purwadhika School",
+    issue_date: "May 2025 - August 2025",
+  },
+  {
     title:
       "Project Based Virtual Intern: Backend Developer Evermos X Rakamin Academy",
     publisher: "Rakamin Academy",
