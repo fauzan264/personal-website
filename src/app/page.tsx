@@ -24,6 +24,8 @@ import { testimonials } from "@/features/testimonial/data/testimonials";
 import { portfolios } from "@/features/portfolio/data/portfolios";
 
 import { useColorModeValue } from "@/components/ui/color-mode";
+import { useEffect } from "react";
+import Hotjar from "@hotjar/browser";
 
 export default function Home() {
   const gradientBg = useColorModeValue(
@@ -52,6 +54,13 @@ export default function Home() {
     "Codeigniter",
     "SQL",
   ];
+
+  useEffect(() => {
+    Hotjar.init(
+      Number(process.env.HOTJAR_SITE_ID),
+      Number(process.env.HOTJAR_VERSION)
+    );
+  }, []);
 
   return (
     <ClientOnly>
