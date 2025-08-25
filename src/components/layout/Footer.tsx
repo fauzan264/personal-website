@@ -4,7 +4,6 @@ import {
   Link as ChakraLink,
   Stack,
   Text,
-  // useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
@@ -24,6 +23,8 @@ const SocialButton = ({
     <ChakraLink
       as={"a"}
       // bg={useColorModeValue('blackAlpha.100', 'whiteAlpa.100')}
+      target="_blank"
+      rel="noopener noreferrer"
       bgColor={"blackAlpha.300"}
       rounded={"full"}
       w={8}
@@ -35,7 +36,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        // bg: useColorModevalue('blackAlpha.200', 'whiteAlpha.200'),
+        // bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
         bgColor: "blackAlpha.500",
       }}
     >
@@ -46,6 +47,24 @@ const SocialButton = ({
 };
 
 export default function Footer() {
+  const socialMediaList = [
+    {
+      href: "https://www.linkedin.com/in/fauzan264",
+      label: "Linkedin",
+      icon: <FaLinkedin />,
+    },
+    {
+      href: "https://github.com/fauzan264",
+      label: "Github",
+      icon: <FaGithub />,
+    },
+    {
+      href: "https://www.instagram.com/ah.fauzann_",
+      label: "Instagram",
+      icon: <FaInstagram />,
+    },
+  ];
+
   return (
     <Box className="footer">
       <Flex
@@ -73,15 +92,15 @@ export default function Footer() {
           marginLeft={{ base: "unset", md: "auto" }}
           justifyContent={"flex-end"}
         >
-          <SocialButton label={"Linkedin"} href={"#"}>
-            <FaLinkedin />
-          </SocialButton>
-          <SocialButton label={"Github"} href={"#"}>
-            <FaGithub />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
-          </SocialButton>
+          {socialMediaList.map((socialMedia) => (
+            <SocialButton
+              key={socialMedia.label}
+              label={socialMedia.label}
+              href={socialMedia.href}
+            >
+              {socialMedia.icon}
+            </SocialButton>
+          ))}
         </Flex>
       </Flex>
     </Box>
