@@ -21,7 +21,7 @@ Jack of all trade, know and/or understand many programming language.`,
     role: "Web Developer - Klikserver",
     quotes: `One of my best friends from college that always chill. He was the kind of guy who was always down to help or just hang out. We went through a lot of late-night projects and last-minute submissions together, and somehow he always made it feel manageable`,
     avatar:
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "https://media.licdn.com/dms/image/v2/D5603AQGrFNej8oDnzQ/profile-displayphoto-crop_800_800/B56ZfsYhEvHcAI-/0/1752017540867?e=1757548800&v=beta&t=X6cjt23VrIhWwe89h3bWzvQQaTg4_gmKBJUoH0WDvvk",
     url: "https://id.linkedin.com/in/jovanzers",
   },
 ];
