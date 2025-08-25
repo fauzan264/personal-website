@@ -74,7 +74,7 @@ export default function Home() {
           </Text>
         </Box>
       </Box>
-      <Box id="about-me" title="About Me" color={"gray.800"} px={10}>
+      <Box id="about-me" color={"gray.800"} px={10}>
         <Flex
           py={"28"}
           mx={"auto"}
