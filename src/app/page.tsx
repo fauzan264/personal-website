@@ -172,6 +172,7 @@ export default function Home() {
         px={5}
         pt={20}
         py={20}
+        bg={"blue.subtle"}
         color={useColorModeValue("blue.800", "blue.100")}
       >
         <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={10}>
