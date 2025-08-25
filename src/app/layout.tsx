@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fauzan - Portfolio",
-  description: "Web Portfolio Ahmad Fauzan",
+  description: "Web Portfolio Ahmad Fauzan v2",
+  keywords: ["fauzan264", "ahmad fauzan mercu buana"],
   openGraph: {
     title: "Fauzan - Portfolio",
     description: "Web Portfolio Ahmad Fauzan",
