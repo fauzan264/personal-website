@@ -47,7 +47,7 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
-    <Box bgColor={"red.400"} color={"white"}>
+    <Box className="footer">
       <Flex
         as={Stack}
         maxW={"6xl"}

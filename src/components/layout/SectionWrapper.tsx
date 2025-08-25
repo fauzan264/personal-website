@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 interface ISectionWrapper {
   id: string;
   title: string;
-  bgColor: string;
   color: string;
   children: ReactNode;
 }
@@ -12,12 +11,11 @@ interface ISectionWrapper {
 export default function SectionWrapper({
   id,
   title,
-  bgColor,
   color,
   children,
 }: ISectionWrapper) {
   return (
-    <Box id={id} pt={10} px={10} py={20} bgColor={bgColor}>
+    <Box id={id} pt={10} px={10} py={20}>
       <Heading
         fontSize={"xl"}
         textAlign={"center"}

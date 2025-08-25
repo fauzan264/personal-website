@@ -3,6 +3,7 @@ import ICardProject from "../types";
 import { GrLinkNext } from "react-icons/gr";
 import { Badge } from "@chakra-ui/react";
 import Image from "next/image";
+import { useColorModeValue } from "@/components/ui/color-mode";
 
 export default function CardProject({
   image,
@@ -19,7 +20,11 @@ export default function CardProject({
       shadow={"md"}
       transition={"ease-in-out"}
       transitionDuration={"slow"}
-      _hover={{ bgColor: "gray.100", shadow: "lg" }}
+      bg={useColorModeValue("white", "#131b2b")}
+      _hover={{
+        bgColor: useColorModeValue("blue.100", "#1a2538"),
+        shadow: "lg",
+      }}
     >
       <Box w={"full"} height={250} display={"block"} position={"relative"}>
         <Image
@@ -33,7 +38,7 @@ export default function CardProject({
         <Flex my={3}>
           {technologies.map((technology, i) => {
             return (
-              <Badge key={i} px={1} mr={1} size={"sm"} colorPalette={"red"}>
+              <Badge key={i} px={1} mr={1} size={"sm"} colorPalette={"blue"}>
                 {technology}
               </Badge>
             );
@@ -45,7 +50,7 @@ export default function CardProject({
       <Card.Footer p={5} justifyContent={"end"}>
         <Button
           asChild
-          bgColor={"red.500"}
+          bgColor={"blue.500"}
           color={"white"}
           textStyle={"sm"}
           variant={"solid"}

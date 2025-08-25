@@ -12,7 +12,6 @@ export default function Navbar() {
   const navLinks = [
     { label: "Home", href: "#" },
     { label: "About Me", href: "#about-me" },
-    { label: "Skills", href: "#skill" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Testimonial", href: "#testimonial" },
     { label: "Contact", href: "#contact" },
@@ -23,10 +22,10 @@ export default function Navbar() {
       as="nav"
       w="100%"
       p="4"
-      bg="red.700"
       position="fixed"
       top={0}
       zIndex={1000}
+      className="navbar"
     >
       <Flex justify="space-between" align="center" px={10}>
         {/* <Text fontSize="lg" fontWeight="bold" color="white">
