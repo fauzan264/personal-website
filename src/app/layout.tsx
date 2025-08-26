@@ -23,8 +23,11 @@ export const metadata: Metadata = {
     title: "Fauzan - Portfolio",
     description: "Web Portfolio Ahmad Fauzan",
     url: "https://fauzan264.netlify.app/",
-    siteName: "My Site",
+    siteName: "Fauzan264",
     images: [{ url: "https://fauzan264.netlify.app/logo.png" }],
+  },
+  verification: {
+    google: "0iemWzSjOZ2_90kWS4-qgeI_Iy22N2d8I0XF0iSNKP4",
   },
 };
 
