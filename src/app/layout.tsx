@@ -30,8 +30,25 @@ export const metadata: Metadata = {
     google: "3JrJhci_avmTj-1AEbREpngdJ5CoH5ypwg6grv06Qok",
   },
   icons: {
-    icon: "https://www.fauzan264.space/favicon.ico",
-    shortcut: "https://www.fauzan264.space/favicon.ico",
+    icon: [
+      {
+        url: "https://www.fauzan264.space/favicon.ico",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "https://www.fauzan264.space/favicon.ico",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "https://www.fauzan264.space/favicon.ico",
+        sizes: "48x48",
+        type: "image/png",
+      },
+    ],
+    shortcut: { url: "https://www.fauzan264.space/favicon.ico", sizes: "any" },
+    apple: { url: "https://www.fauzan264.space/favicon.ico", sizes: "180x180" },
   },
 };
 
