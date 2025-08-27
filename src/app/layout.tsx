@@ -47,7 +47,10 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
-    shortcut: { url: "https://www.fauzan264.space/favicon.ico", sizes: "any" },
+    shortcut: {
+      url: "https://www.fauzan264.space/favicon.ico",
+      sizes: "48x48",
+    },
     apple: { url: "https://www.fauzan264.space/favicon.ico", sizes: "180x180" },
   },
 };
