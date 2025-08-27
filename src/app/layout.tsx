@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "Web Portfolio Ahmad Fauzan",
     url: "https://www.fauzan264.space",
     siteName: "Fauzan264",
-    images: [{ url: "hhttps://www.fauzan264.space/images/logo.png" }],
+    images: [{ url: "https://www.fauzan264.space/images/logo.png" }],
   },
   verification: {
     google: "3JrJhci_avmTj-1AEbREpngdJ5CoH5ypwg6grv06Qok",
