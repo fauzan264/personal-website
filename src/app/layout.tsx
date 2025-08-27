@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fauzan - Portfolio",
     description: "Web Portfolio Ahmad Fauzan",
-    url: "https://fauzan264.netlify.app/",
+    url: "https://www.fauzan264.space",
     siteName: "Fauzan264",
-    images: [{ url: "https://fauzan264.netlify.app/logo.png" }],
+    images: [{ url: "hhttps://www.fauzan264.space/images/logo.png" }],
   },
   verification: {
-    google: "0iemWzSjOZ2_90kWS4-qgeI_Iy22N2d8I0XF0iSNKP4",
+    google: "3JrJhci_avmTj-1AEbREpngdJ5CoH5ypwg6grv06Qok",
   },
 };
 
