@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     google: "3JrJhci_avmTj-1AEbREpngdJ5CoH5ypwg6grv06Qok",
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "https://www.fauzan264.space/favicon.ico",
+    shortcut: "https://www.fauzan264.space/favicon.ico",
   },
 };
 
