@@ -1,5 +1,33 @@
 export const portfolios = [
   {
+    image: "/images/my-grocery.png",
+    title: "My Grocery",
+    description:
+      "As part of the Fullstack Web Development program at Purwadhika Digital School, I developed a Grocery App with a Node.js + Express.js backend and a Next.js + Tailwind CSS frontend, covering management of products, stores, inventory, orders, and delivery. This project strengthened my skills in fullstack development, API design, frontend-backend integration, and applied clean code practices, input validation, and JWT authentication.",
+    technologies: [
+      "Next JS",
+      "TailwindCSS",
+      "Express JS",
+      "TypeScript",
+      "PostgreSQL",
+    ],
+    url: "https://grocery-app-teal-nine.vercel.app",
+  },
+  {
+    image: "/images/event-management.png",
+    title: "Event Management",
+    description:
+      "During the Fullstack Web Development program, I built an Event Management App using Node.js + Express.js for the backend and Next.js + Tailwind CSS for the frontend, featuring event management, user registration, and booking handling. The project enhanced my expertise in designing APIs, integrating frontend with backend services, and implementing secure authentication, input validation, and clean code practices",
+    technologies: [
+      "Next JS",
+      "TailwindCSS",
+      "Express JS",
+      "TypeScript",
+      "PostgreSQL",
+    ],
+    url: "https://event-management-app-three-mu.vercel.app",
+  },
+  {
     image: "/images/mari-tualang-web.jpg",
     title: "Maritualang",
     description:
