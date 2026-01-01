@@ -1,5 +1,13 @@
 export const jobs = [
   {
+    company: "Persada Group",
+    position: "Programmer",
+    status: "Contract",
+    from: "15 December 2025",
+    until: "Present",
+    image: "",
+  },
+  {
     company: "ByteDance",
     position: "Tech Support Engineer",
     status: "Full Time",
