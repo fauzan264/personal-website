@@ -4,7 +4,7 @@ export const jobs = [
     position: "Programmer",
     status: "Contract",
     from: "15 December 2025",
-    until: "15 July 2026",
+    until: "15 June 2026",
     image: "/images/jobs/persada-solusi-data.jpg",
   },
   {
