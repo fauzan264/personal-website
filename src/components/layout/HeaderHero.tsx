@@ -60,7 +60,7 @@ export default function HeaderHero() {
       }}
     >
       <Flex
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column-reverse", md: "row" }}
         align="center"
         justify="space-between"
         w="full"
