@@ -1,11 +1,11 @@
 export const jobs = [
   {
-    company: "Persada Group",
+    company: "PT. Persada Solusi Data (Persada Group)",
     position: "Programmer",
     status: "Contract",
     from: "15 December 2025",
-    until: "Present",
-    image: "",
+    until: "15 July 2026",
+    image: "/images/jobs/persada-solusi-data.jpg",
   },
   {
     company: "ByteDance",
@@ -45,6 +45,6 @@ export const jobs = [
     status: "Internship",
     from: "14 September 2019",
     until: "14 February 2020",
-    image: "",
+    image: "/images/jobs/telkom-akses.png",
   },
 ];
