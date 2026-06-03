@@ -35,10 +35,10 @@ export default function CardProject({
         />
       </Box>
       <Card.Body p={5}>
-        <Flex my={3}>
+        <Flex my={3} flexWrap="wrap" gap={1}>
           {technologies.map((technology, i) => {
             return (
-              <Badge key={i} px={1} mr={1} size={"sm"} colorPalette={"blue"}>
+              <Badge key={i} px={1} size={"sm"} colorPalette={"blue"}>
                 {technology}
               </Badge>
             );
