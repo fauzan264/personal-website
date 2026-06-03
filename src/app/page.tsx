@@ -17,6 +17,8 @@ import CardProject from "@/features/portfolio/components/CardProject";
 import JobItem from "@/features/jobs/components/JobItem";
 import CertificateItem from "@/features/certificates/components/CertificateItem";
 import TestimonialCard from "@/features/testimonial/components/TestimonialCard";
+import Image from "next/image";
+import HeaderHero from "@/components/layout/HeaderHero";
 
 import { jobs } from "@/features/jobs/data/jobs";
 import { certificates } from "@/features/certificates/data/certificates";
@@ -64,25 +66,7 @@ export default function Home() {
 
   return (
     <ClientOnly>
-      <Box
-        id="hero"
-        pt={20}
-        minHeight={"100vh"}
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
-        padding={"0 2rem"}
-        background={gradientBg}
-      >
-        <Box textAlign={"center"}>
-          <Text as="h1" fontSize={"5xl"} fontWeight={"bold"}>
-            Ahmad Fauzan
-          </Text>
-          <Text as="p" color={"gray.500"} fontSize={"xl"} fontWeight={"bold"}>
-            Software Engineer
-          </Text>
-        </Box>
-      </Box>
+        <HeaderHero />
       <Box id="about-me" color={"gray.800"} px={10}>
         <Flex
           py={"28"}
