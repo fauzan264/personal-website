@@ -1,6 +1,6 @@
 export const portfolios = [
   {
-    image: "/images/persada-hris.png",
+    image: "/images/persada-hris1.png",
     title: "Persada HRIS",
     description:
       "A comprehensive HRIS web application designed for HR Departments and System Administrators to efficiently manage master data, as well as generate and download reports. The project also involves developing a robust REST API that serves as the backend for both the web platform and the mobile application.",
