@@ -43,8 +43,8 @@ export const jobs = [
     company: "Telkom Akses",
     position: "Admin Commerce",
     status: "Internship",
-    from: "14 September 2019",
-    until: "14 February 2020",
+    from: "01 May 2018",
+    until: "31 July 2018",
     image: "/images/jobs/telkom-akses.png",
   },
 ];
